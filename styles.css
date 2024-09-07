@@ -1,0 +1,128 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.section {
+    display: none;
+    padding: 80px;
+}
+
+.section.active {
+    display: block;
+}
+
+.navbar-nav .nav-link {
+    font-weight: normal;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px; 
+}
+
+.project-title {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+    cursor: pointer; 
+}
+
+.card-text {
+    text-align: justify;
+    color: #000000;
+    margin-top: 5px; 
+    margin-bottom: 0; 
+    padding: 0; 
+    line-height: 1.6;
+}
+
+#portfolio .container {
+    padding: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+#portfolio h2 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.ig-photo {
+    text-align: center; /* Center the image */
+    margin-top: 20px; /* Space above the image */
+    margin-bottom: 20px; /* Space below the image */
+    display: inline-block; /* Ensure the container only takes up as much space as needed */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the hover effect */
+}
+
+.ig-photo img {
+    border: 2px solid rgba(255, 255, 255, 0.7); /* Add a border to match the card style */
+    border-radius: 1%; /* Make the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for a card-like effect */
+    width: 500px; /* Adjust the size as needed */
+    height: 500px; /* Ensure the image is circular */
+    object-fit: cover; /* Ensure the image covers the circle without stretching */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for the hover effect */
+}
+
+.ig-photo:hover img {
+    transform: scale(1.1); /* Slightly scale up the image on hover */
+}
+
+.modal-title {
+    color: #000000;
+}
+
+/* Style the modal content with justified text */
+.modal-body {
+    text-align: justify;
+    color: #000000;
+}
+
+/* Background image and dimming effect */
+body {
+    position: relative;
+    background-image: url('8351153.gif');
+    color: #ffffff;
+    background-size: cover; /* Adjust size as needed */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Keeps the background fixed while scrolling */
+    overflow-x: hidden; /* Prevent horizontal scroll due to large background image */
+}
+
+body::before {
+    content: '';
+    position: fixed; /* Fixed to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the rgba value for more or less dimming */
+    z-index: -1; /* Ensure the overlay is behind content */
+}
+
+/* Style for project titles and background change */
+#portfolio {
+    padding: 20px;
+    color: #fff; /* Ensure text is readable on black background */
+}
+
+#portfolio.black-background {
+    background-color: #000; /* Black background for the portfolio section */
+}
